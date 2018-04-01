@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<script src="./lib/vue.js"></script>	
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<body>
+		<div id="webpagehelp">
+			<div id="sitename">
+				{{message}}
+			</div>
+			<div id="timer">
+				time 12.30
+			</div>
+			<div id="code-submit">
+				Write your comments here
+			</div>
+			<div id="thanks">
+				thanks for visit my web page
+			</div>
+			<!-- tooltip component -->
+			<tooltip v-bind:list="listofElements" v-bind:tooltip="messageList" 
+			v-bind:support="supportText" v-bind:bshow="bShowHelp" v-bind:indexvalue="defaultIndex"></tooltip>	
+			
+		</div>
+	</body>
+
+	<script type="text/javascript" src="./script/main.js"></script>
+</html>
