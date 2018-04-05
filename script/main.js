@@ -131,6 +131,11 @@ var vm = new Vue({
 		listofElements:['','timer','sitename','code-submit', 'thanks'],
 		bShowHelp:true,
 		defaultIndex:0
+	},
+	methods : {
+		showHelpScreen : function() {
+			this.$refs.tooltipcomponent.bshow = true;
+		}
 	}
 });
 
